@@ -18,7 +18,7 @@ class ProfileCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .gray
+        navigationItem.title = "Near You"
         
         configureCollectionView()
     }
@@ -49,6 +49,7 @@ class ProfileCollectionViewController: UIViewController {
         collectionView.register(ProfileCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
         collectionView.dataSource = self
+        collectionView.delegate = self
         
         self.collectionView = collectionView
         
@@ -58,7 +59,8 @@ class ProfileCollectionViewController: UIViewController {
 }
 
 // MARK: UICollectionViewDataSource
-extension ProfileCollectionViewController: UICollectionViewDataSource {
+extension ProfileCollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return profileController.profiles.count
     }
@@ -70,4 +72,14 @@ extension ProfileCollectionViewController: UICollectionViewDataSource {
     
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let userProfileVC = UserProfileViewController()
+        let profileController = ProfileController()
+        userProfileVC.profile = profileController.profiles[indexPath.item]
+        
+        navigationController?.modalPresentationStyle = .overFullScreen
+        navigationController?.present(userProfileVC, animated: true)
+    }
+    
 }

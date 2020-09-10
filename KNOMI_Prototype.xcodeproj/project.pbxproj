@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4F0E8C24AACDF7002039CE /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F0E8B24AACDF7002039CE /* UserProfileViewController.swift */; };
+		AD4F0E8E24ABEE3A002039CE /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F0E8D24ABEE3A002039CE /* MenuBar.swift */; };
 		ADB722CF2496776A005030C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB722CE2496776A005030C0 /* AppDelegate.swift */; };
 		ADB722D12496776A005030C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB722D02496776A005030C0 /* SceneDelegate.swift */; };
 		ADB722D82496776B005030C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB722D72496776B005030C0 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD4F0E8B24AACDF7002039CE /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		AD4F0E8D24ABEE3A002039CE /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		ADB722CB2496776A005030C0 /* KNOMI_Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNOMI_Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB722CE2496776A005030C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB722D02496776A005030C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB722E824968CD6005030C0 /* ProfileCollectionViewController.swift */,
+				AD4F0E8B24AACDF7002039CE /* UserProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				ADB722F22496B99D005030C0 /* ProfileCollectionViewCell.swift */,
+				AD4F0E8D24ABEE3A002039CE /* MenuBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,9 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB722EF2496913A005030C0 /* ProfileController.swift in Sources */,
+				AD4F0E8C24AACDF7002039CE /* UserProfileViewController.swift in Sources */,
 				ADB722F12496B255005030C0 /* Extensions.swift in Sources */,
 				ADB722E924968CD6005030C0 /* ProfileCollectionViewController.swift in Sources */,
 				ADB722F32496B99D005030C0 /* ProfileCollectionViewCell.swift in Sources */,
+				AD4F0E8E24ABEE3A002039CE /* MenuBar.swift in Sources */,
 				ADB722ED2496908B005030C0 /* Profile.swift in Sources */,
 				ADB722CF2496776A005030C0 /* AppDelegate.swift in Sources */,
 				ADB722D12496776A005030C0 /* SceneDelegate.swift in Sources */,
